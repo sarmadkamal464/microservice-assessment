@@ -1,6 +1,8 @@
 # Assessment NEXT BASKET
 Developer: Sarmad Kamal
+
 Resume: https://rb.gy/3hgssk
+
 Submission Date: 03 August 2024 at 04:00 PM (GMT+5)
 
 Assessment Link: https://docs.google.com/document/d/1ORROUV1Gsqpyrp8MEjUl9pnIJsFOS-j2NEyv4NPpiWs/edit?usp=sharing
@@ -23,10 +25,10 @@ This assessment demonstrates a microservices architecture using Symfony, RabbitM
 
 ## Setup
 
-1. unzip project:
+1. clone repository https://github.com/sarmadkamal464/microservice-assessment
    
 ```bash
-cd symfony-microservices
+cd microservice-assessment
 ```
 
 2. Build and start the Docker containers:
