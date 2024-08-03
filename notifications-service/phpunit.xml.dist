@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory>src</directory>
+        </include>
+    </coverage>
+    <php>
+        <env name="APP_ENV" value="test"/>
+        <env name="KERNEL_CLASS" value="App\Kernel"/>
+        <!-- ###+ symfony/messenger ### -->
+        <!-- MESSENGER_TRANSPORT_DSN=amqp://guest:guest@rabbitmq:5672/%2f/messages -->
+        <env name="MESSENGER_TRANSPORT_DSN" value="amqp://guest:guest@rabbitmq:5672/%2f/messages"/>
+        <!-- ###- symfony/messenger ### -->
+    </php>
+</phpunit>
